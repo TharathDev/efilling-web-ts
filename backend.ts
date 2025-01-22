@@ -21,13 +21,18 @@ interface ApiResponse {
 interface InvoiceResult {
   invoice_no: string;
   message: string;
+  parsedJsonData: any;
 }
 
 export interface ProcessResult {
   success: InvoiceResult[];
   failed: InvoiceResult[];
   message: string;
-  statusMessages: string[];
+  statusMessages?: string[];
+  requestBody?: {
+    textJsContent: string;
+    jsonData: string;
+  };
 }
 
 import axios from 'axios';
@@ -122,7 +127,8 @@ export async function processData(textJsContent: string, jsonData: string) {
         console.error("Failed to extract invoice data");
         failedInvoices.push({
           invoice_no: invoice.INV_NO,
-          message: "Failed to extract invoice data"
+          message: "Failed to extract invoice data",
+          parsedJsonData: null
         });
         return;
       }
@@ -149,7 +155,8 @@ export async function processData(textJsContent: string, jsonData: string) {
           console.log(`Skipping invoice ${invoice.INV_NO}: Unable to fetch company info`);
           failedInvoices.push({
             invoice_no: invoice.INV_NO,
-            message: "Unable to fetch company info"
+            message: "Unable to fetch company info",
+            parsedJsonData: null
           });
           return;
         }
@@ -196,8 +203,17 @@ export async function processData(textJsContent: string, jsonData: string) {
         
         successfulInvoices.push({
           invoice_no: invoice.INV_NO,
-          message: data
+          message: data,
+          parsedJsonData: requestBody
         });
+        if(data != 'OK'){
+          failedInvoices.push({
+            invoice_no: invoice.INV_NO,
+            message: data,
+            parsedJsonData: requestBody
+          });
+        }
+        
       } catch (error) {
         console.error(`Failed to process invoice ${invoice.INV_NO}`);
         if (error instanceof Error) {
@@ -207,7 +223,8 @@ export async function processData(textJsContent: string, jsonData: string) {
         }
         failedInvoices.push({
           invoice_no: invoice.INV_NO,
-          message: "Failed to process invoice"
+          message: "Failed to process invoice",
+          parsedJsonData: requestBody
         });
       }
     };
@@ -222,7 +239,8 @@ export async function processData(textJsContent: string, jsonData: string) {
           console.log(`Skipping Invoice ${invoice.INV_NO}: Invalid date format`);
           failedInvoices.push({
             invoice_no: invoice.INV_NO,
-            message: "Invalid date format"
+            message: "Invalid date format",
+            parsedJsonData: null
           });
           continue;
         }
@@ -233,7 +251,8 @@ export async function processData(textJsContent: string, jsonData: string) {
           console.log(`Skipping Invoice ${invoice.INV_NO}: Mismatched month/year`);
           failedInvoices.push({
             invoice_no: invoice.INV_NO,
-            message: "Invalid date format"
+            message: "Invalid date format",
+            parsedJsonData: null
           });
           continue;
         }
@@ -275,7 +294,11 @@ export async function processData(textJsContent: string, jsonData: string) {
     return {
       success: result.success,
       failed: result.failed,
-      message: `Processed ${result.success.length} invoices successfully, ${result.failed.length} failed`
+      message: `Processed ${result.success.length} invoices successfully, ${result.failed.length} failed`,
+      requestBody: {
+        textJsContent,
+        jsonData
+      }
     };
     } catch (error) {
       let message = "Unknown error occurred";
@@ -289,7 +312,11 @@ export async function processData(textJsContent: string, jsonData: string) {
     return {
       success: [],
       failed: [],
-      message: `Error processing data: ${message}`
+      message: `Error processing data: ${message}`,
+      requestBody: {
+        textJsContent,
+        jsonData
+      }
     };
   }
 }

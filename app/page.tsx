@@ -10,6 +10,9 @@ export default function Home() {
   const [processing, setProcessing] = useState(false);
   const [result, setResult] = useState<ProcessResult | null>(null);
 
+  console.log(result);
+  
+
   const validateJson = (jsonString: string): boolean => {
     try {
       JSON.parse(jsonString);
@@ -72,7 +75,30 @@ export default function Home() {
       <h1 className="text-2xl font-bold mb-4">Data Processor</h1>
       
       <div className="mb-4">
-        <label className="block mb-2">Text JS Content:</label>
+        <div className="flex justify-between items-center mb-2">
+          <label>Text JS Content:</label>
+          <div className="flex gap-2">
+            <button
+              onClick={async () => {
+                try {
+                  const text = await navigator.clipboard.readText();
+                  setTextJsContent(text);
+                } catch (error) {
+                  alert('Failed to read from clipboard');
+                }
+              }}
+              className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-2 py-1 rounded text-sm"
+            >
+              Paste
+            </button>
+            <button
+              onClick={() => setTextJsContent('')}
+              className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-2 py-1 rounded text-sm"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
         <textarea
           value={textJsContent}
           onChange={(e) => setTextJsContent(e.target.value)}
@@ -83,7 +109,34 @@ export default function Home() {
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">JSON Data:</label>
+        <div className="flex justify-between items-center mb-2">
+          <label>JSON Data:</label>
+          <div className="flex gap-2">
+            <button
+              onClick={async () => {
+                try {
+                  const text = await navigator.clipboard.readText();
+                  setJsonData(text);
+                  validateJson(text);
+                } catch (error) {
+                  alert('Failed to read from clipboard');
+                }
+              }}
+              className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-2 py-1 rounded text-sm"
+            >
+              Paste
+            </button>
+            <button
+              onClick={() => {
+                setJsonData('');
+                setJsonError(null);
+              }}
+              className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-2 py-1 rounded text-sm"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
         <textarea
           value={jsonData}
           onChange={(e) => {
@@ -133,33 +186,48 @@ export default function Home() {
               {result.message}
             </p>
 
-            {result.success.length > 0 && (
-              <div className="mb-4">
-                <h3 className="font-bold mb-2">✅ Successful Invoices:</h3>
-                <ul className="list-disc pl-5">
+            <div className="overflow-x-auto">
+              <table className="w-full results-table">
+                <thead>
+                  <tr className="bg-gray-200">
+                    <th className="px-4 py-2 text-left">Invoice No</th>
+                    <th className="px-4 py-2 text-left">Date</th>
+                    <th className="px-4 py-2 text-left">Remark</th>
+                    <th className="px-4 py-2 text-left">Total Amount</th>
+                    <th className="px-4 py-2 text-left">VAT Type</th>
+                    <th className="px-4 py-2 text-left">Status</th>
+                    <th className="px-4 py-2 text-left">Message</th>
+                  </tr>
+                </thead>
+                <tbody>
                   {result.success.map((invoice, idx) => (
-                    <li key={idx} className="mb-2">
-                      <div className="font-medium">Invoice: {invoice.invoice_no}</div>
-                      <div className="text-sm text-gray-600">{invoice.message}</div>
-                    </li>
+                    <tr key={`success-${idx}`} className={`
+                      ${invoice.message === 'OK' ? 'bg-green-50' : 'bg-yellow-50'}
+                      border-b border-gray-200
+                    `}>
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.INV_DATE || 'N/A'}</td>
+                      <td className="px-4 py-2">{invoice.invoice_no}</td>
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.INV_REMARK || 'N/A'}</td>
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.TOTAL_AMT || 'N/A'}</td>
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.VAT_TYPE || 3}</td>
+                      <td className="px-4 py-2">{invoice.message === 'OK' ? 'Success' : 'Warning'}</td>
+                      <td className="px-4 py-2">{invoice.message}</td>
+                    </tr>
                   ))}
-                </ul>
-              </div>
-            )}
-
-            {result.failed.length > 0 && (
-              <div>
-                <h3 className="font-bold mb-2 text-red-600">❌ Failed Invoices:</h3>
-                <ul className="list-disc pl-5">
                   {result.failed.map((invoice, idx) => (
-                    <li key={idx} className="mb-2">
-                      <div className="font-medium">Invoice: {invoice.invoice_no}</div>
-                      <div className="text-sm text-gray-600">{invoice.message}</div>
-                    </li>
+                    <tr key={`failed-${idx}`} className="bg-red-50 border-b border-gray-200">
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.INV_DATE || 'N/A'}</td>
+                      <td className="px-4 py-2">{invoice.invoice_no}</td>
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.INV_REMARK || 'N/A'}</td>
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.TOTAL_AMT || 'N/A'}</td>
+                      <td className="px-4 py-2">{invoice.parsedJsonData?.VAT_TYPE || 3}</td>
+                      <td className="px-4 py-2">Failed</td>
+                      <td className="px-4 py-2">{invoice.message}</td>
+                    </tr>
                   ))}
-                </ul>
-              </div>
-            )}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       )}

@@ -23,10 +23,24 @@ export async function POST(request: Request) {
     }
 
     console.log('Processing request with:', { textJsContent, parsedJsonData });
+    const startTime = Date.now();
     const result = await processData(textJsContent, JSON.stringify(parsedJsonData));
     
-    console.log('Processing completed successfully');
-    return new Response(JSON.stringify(result), {
+    return new Response(JSON.stringify({
+      ...result,
+      requestBody: {
+        textJsContent,
+        jsonData,
+        parsedJsonData
+      },
+      statusMessages: [
+        '=== Processing Complete ===',
+        `✅ Successfully Processed: ${result.success.length}`,
+        `❌ Failed Invoices: ${result.failed.length}`,
+        `⏱️  Total Processing Time: ${((Date.now() - startTime) / 1000).toFixed(2)} seconds`,
+        `📊 Success Rate: ${((result.success.length / (result.success.length + result.failed.length)) * 100).toFixed(2)}%`
+      ]
+    }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
     });
