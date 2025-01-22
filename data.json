@@ -1,0 +1,737 @@
+[
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12003",
+        "INV_REMARK": "ថ្លៃជួលយានជំនិះ 6/10 - ផ្លាស់ទីសំរាម 31 ដង",
+        "TOTAL_AMT": "2,043,360",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12004",
+        "INV_REMARK": "តម្លៃជួល Backhoe PC 320 2 ថ្ងៃ",
+        "TOTAL_AMT": "1,663,200",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12005",
+        "INV_REMARK": "ការចំណាយលើថ្ម 2 ដង",
+        "TOTAL_AMT": "950,044",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12006",
+        "INV_REMARK": "ខ្សាច់ចំណាយ 4 ដំណើរ",
+        "TOTAL_AMT": "11,958,289",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12008",
+        "INV_REMARK": "តម្លៃ 80 បាយអសម្រាប់ជាន់ដំបូល",
+        "TOTAL_AMT": "1,995,840",
+        "ITEM_ID": "Samnanglim"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12009",
+        "INV_REMARK": "តម្លៃចាក់បេតុង 21-30",
+        "TOTAL_AMT": "36,231,862",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12016",
+        "INV_REMARK": "ចំណាយស្នាក់នៅ ",
+        "TOTAL_AMT": "4,395,600",
+        "ITEM_ID": "KHUNDARA"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12018",
+        "INV_REMARK": "ប្រាក់ឈ្នួលរបស់ DC  (48 នាក់)",
+        "TOTAL_AMT": "36,237,564",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12019",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - \nការងារកាសែតកម្រិត, ជណ្តើរប៉ូលា ST1, ជាន់ B2-10",
+        "TOTAL_AMT": "4,936,496",
+        "ITEM_ID": "CHHANGBUNLEO"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12022",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការងារដំបូលបណ្តោះអាសន្នចាក់វេទិកា Gen",
+        "TOTAL_AMT": "4,895,273",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12023",
+        "INV_REMARK": "តម្លៃពលកម្មតាមលំដាប់ - ជួសជុលជណ្តើរជញ្ជាំង Onsen",
+        "TOTAL_AMT": "5,871,452",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12024",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ជញ្ជាំងខាងក្រៅ ម្នាងសិលាជញ្ជាំង ក្បឿង",
+        "TOTAL_AMT": "10,370,052",
+        "ITEM_ID": "PRAVA"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12029",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - កំរាលជញ្ជាំងជណ្តើរយន្តបន្ទប់សំរាម",
+        "TOTAL_AMT": "6,114,398",
+        "ITEM_ID": "ChangLeeHao"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12034",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការងារជញ្ជាំងពន្លឺ P9, ជាន់ទី 6,8",
+        "TOTAL_AMT": "47,401,200",
+        "ITEM_ID": "CHHANGBUNLEO"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12038",
+        "INV_REMARK": "តំលៃ 3 ជុំ ឥដ្ឋស្រាល ជាន់ទី 10",
+        "TOTAL_AMT": "31,294,771",
+        "ITEM_ID": "PKlightblock"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12039",
+        "INV_REMARK": "តម្លៃនៃស៊ីម៉ងត៍គឺ 160 បំណែក។",
+        "TOTAL_AMT": "3,991,680",
+        "ITEM_ID": "Samnanglim"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12040",
+        "INV_REMARK": "តម្លៃជួលរ៉ឺម៉ក-ដឹកជញ្ជូនទំនិញពីប៉ោយប៉ែត-ប៉ៃលិន",
+        "TOTAL_AMT": "1,306,800",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12041",
+        "INV_REMARK": "តម្លៃ 400 ដុំដែក",
+        "TOTAL_AMT": "5,489,392",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12042",
+        "INV_REMARK": "តម្លៃបេតុង 30/10-9/11/66 លេខ 24",
+        "TOTAL_AMT": "11,205,810",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12043",
+        "INV_REMARK": "តម្លៃដែក",
+        "TOTAL_AMT": "25,163,883",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12044",
+        "INV_REMARK": "តម្លៃការងារ Post Tension",
+        "TOTAL_AMT": "76,554,043",
+        "ITEM_ID": "SOKUNTHEAKAPALY"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12045",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "5,542,893",
+        "ITEM_ID": "88003196"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12048",
+        "INV_REMARK": "តម្លៃពណ៌",
+        "TOTAL_AMT": "19,459,019",
+        "ITEM_ID": "88003200"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12049",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "1,452,173",
+        "ITEM_ID": "KYTHYORMORN"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12060",
+        "INV_REMARK": "តម្លៃប្រេងម៉ាស៊ូត",
+        "TOTAL_AMT": "118,800",
+        "ITEM_ID": "88003211"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12061",
+        "INV_REMARK": "តម្លៃទំនាក់ទំនងវិទ្យុ",
+        "TOTAL_AMT": "480,498",
+        "ITEM_ID": "88003204"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12069",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "8,664,916",
+        "ITEM_ID": "PHNOMMAI"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12070",
+        "INV_REMARK": "ថ្លៃជួលយានជំនិះ 6 កង់ - ដឹកជញ្ជូនសម្ភារៈអេតចាយ +\n រំកិលបំពង់ Onsen",
+        "TOTAL_AMT": "481,140",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12071",
+        "INV_REMARK": "ខ្សាច់ចំណាយ 2 ដំណើរ",
+        "TOTAL_AMT": "6,434,802",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12077",
+        "INV_REMARK": "ប្រាក់ឈ្នួល DC ",
+        "TOTAL_AMT": "30,959,636",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12078",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការដាក់ឥដ្ឋនិងម្នាងសិលានៅជាន់ទី 10",
+        "TOTAL_AMT": "17,600,458",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12079",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការដាក់ឥដ្ឋនិងម្នាងសិលានៅជាន់ទី 10\n ម្នាងសិលាជញ្ជាំងក្រាស់",
+        "TOTAL_AMT": "19,675,894",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12081",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ថ្នាំកូតរអិល ជញ្ជាំងថ្នាំលាប ជាន់ B2-9 ជណ្តើរ ST1",
+        "TOTAL_AMT": "4,843,595",
+        "ITEM_ID": "Changrat"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12083",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - លាបគែមនៃសន្លាក់ជួរឈរនៅជាន់ទី 4-9 + ជញ្ជាំងបន្ទប់សំរាម",
+        "TOTAL_AMT": "2,398,928",
+        "ITEM_ID": "ChangLeeHao"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12084",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - កាសែតកម្រិតជណ្តើរ ST1,3 ជាន់ B2-10, កម្រាលកាសែតជាន់ 1M",
+        "TOTAL_AMT": "7,379,143",
+        "ITEM_ID": "CHHANGBUNLEO"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12085",
+        "INV_REMARK": "តម្លៃពលកម្មរចនាសម្ព័ន្ធ - ដំបូលស៊ុមដែកគ្របដណ្តប់ Onsen",
+        "TOTAL_AMT": "261,835",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12086",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ជញ្ជាំងម្នាងសិលា ST-1 ជាន់ទី 1-10 ជួសជុលរន្ទា",
+        "TOTAL_AMT": "8,308,516",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12088",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ដំឡើងបន្ទះជញ្ជាំង, បន្ទះ precast",
+        "TOTAL_AMT": "28,027,534",
+        "ITEM_ID": "CHANGTAWAN"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12089",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ដំឡើងឧបករណ៍ចាប់សញ្ញាទឹកនោមនៅជាន់ 1,1M",
+        "TOTAL_AMT": "496,584",
+        "ITEM_ID": "CHANGWANDEE"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12091",
+        "INV_REMARK": "តម្លៃពលកម្មសម្រាប់ការដំឡើង Post Tension ជាន់ 3M(Z.2)",
+        "TOTAL_AMT": "2,343,924",
+        "ITEM_ID": "SOKUNTHEAKAPALY"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12092",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការងារជញ្ជាំងពន្លឺ P9 ជាន់ 1M,2,4,5+ជាន់ពិដាន 1M,2,3M",
+        "TOTAL_AMT": "92,290,493",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12093",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការងារជញ្ជាំងស្រាល P9 ជាន់ទី 6",
+        "TOTAL_AMT": "35,218,498",
+        "ITEM_ID": "CHHANGBUNLEO"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12094",
+        "INV_REMARK": "ប្រាក់បៀវត្សរ៍",
+        "TOTAL_AMT": "141,816,431",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12096",
+        "INV_REMARK": "PND 1",
+        "TOTAL_AMT": "920,700",
+        "ITEM_ID": "BunyinJinajin"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12097",
+        "INV_REMARK": "តម្លៃបេតុង ",
+        "TOTAL_AMT": "22,627,955",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12098",
+        "INV_REMARK": "តម្លៃស៊ីម៉ងត៍ក្រហម: 40 ដុំ",
+        "TOTAL_AMT": "798,455",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12099",
+        "INV_REMARK": "តម្លៃ WiRE MESH 50 បន្ទះ",
+        "TOTAL_AMT": "6,415,200",
+        "ITEM_ID": "Samnanglim"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12100",
+        "INV_REMARK": "តម្លៃស៊ីម៉ងត៍ពណ៌បៃតងគឺ 640 គ្រាប់ + តម្លៃនៃកាវគឺ 500 គ្រាប់",
+        "TOTAL_AMT": "19,542,600",
+        "ITEM_ID": "Samnanglim"
+    },
+    {
+        "INV_DATE": "2024-12-01",
+        "INV_NO": "PL12101",
+        "INV_REMARK": "ថ្លៃជួលរ៉ឺម៉ក ១គ្រឿង ដឹកជញ្ជូនទំនិញទៅប៉ោយប៉ែត-ប៉ៃលិន",
+        "TOTAL_AMT": "1,544,400",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12104",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "5,079,056",
+        "ITEM_ID": "PHNOMMAI"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12105",
+        "INV_REMARK": "ថ្លៃជួលរថយន្ត Backhoe PC 320 រយៈពេល 1 ថ្ងៃ",
+        "TOTAL_AMT": "831,600",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12106",
+        "INV_REMARK": "តម្លៃចាក់បេតុង ",
+        "TOTAL_AMT": "29,135,106",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12107",
+        "INV_REMARK": "តម្លៃ 500 ដុំដែក",
+        "TOTAL_AMT": "6,099,073",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12108",
+        "INV_REMARK": " តម្លៃនៃស៊ីម៉ងត៍ពណ៌បៃតងគឺ 80 បំណែក",
+        "TOTAL_AMT": "1,500,325",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12116",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ជញ្ជាំងម្នាងសិលាជាន់ 1-3M + ក្បឿងបន្ទប់ទឹកជាន់ 1,1M",
+        "TOTAL_AMT": "9,426,661",
+        "ITEM_ID": "CHANGPRAEWA"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12117",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - Skim Coat សម្រាប់គូរជញ្ជាំង ជាន់ទី 1 ទី 4 ជាន់ទី 8 ជណ្តើរ ST1/3",
+        "TOTAL_AMT": "5,553,662",
+        "ITEM_ID": "Changrat"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12119",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - បូកកំបោលជញ្ជាំងបន្ទប់សម្រាម ជាន់ 1M,2,3M",
+        "TOTAL_AMT": "2,223,104",
+        "ITEM_ID": "ChangLeeHao"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12120",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ចាក់ Topping, leveling, polishing ពង្រឹងស៊ុមជញ្ជាំងពណ៌ប្រផេះ",
+        "TOTAL_AMT": "11,038,896",
+        "ITEM_ID": "CHHANGBUNLEO"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12121",
+        "INV_REMARK": "តម្លៃពលកម្មរចនាសម្ព័ន្ធ - ស៊ុមដែក, ដំបូលគ្រប Onsen, grout សម្រាប់ក្បាលសសរ",
+        "TOTAL_AMT": "1,107,572",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12122",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការផ្សារ ការជួបប្រជុំគ្នានៃដំណាក់កាល ការដំឡើងផ្លូវដែកជណ្តើរ សាងសង់ដំបូល",
+        "TOTAL_AMT": "8,977,835",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12124",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ដំឡើងបន្ទះជញ្ជាំង, បន្ទះ precast",
+        "TOTAL_AMT": "32,841,666",
+        "ITEM_ID": "CHANGTAWAN"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12131",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ជញ្ជាំងស្រាល P9 ជាន់ទី 6",
+        "TOTAL_AMT": "10,903,464",
+        "ITEM_ID": "CHHANGBUNLEO"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12132",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការរុះរើ, ការតុបតែងសន្លាក់ cornice លាបជញ្ជាំងខាងក្រៅនៃជាន់ទី 1-9",
+        "TOTAL_AMT": "6,061,414",
+        "ITEM_ID": "CHANGWANDEE"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12133",
+        "INV_REMARK": "ថ្លៃដឹកជញ្ជូន - ទ្វាររមូរ + ថ្នាំលាប",
+        "TOTAL_AMT": "3,445,200",
+        "ITEM_ID": "BunyinJinajin"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12134",
+        "INV_REMARK": "តម្លៃ ដែកគោល 2 សន្លឹក + 4 បន្ទះ",
+        "TOTAL_AMT": "8,074,598",
+        "ITEM_ID": "Samnanglim"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12139",
+        "INV_REMARK": "តម្លៃចាក់បេតុង ",
+        "TOTAL_AMT": "11,841,152",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12140",
+        "INV_REMARK": "តម្លៃនៃស៊ីម៉ងត៍ពណ៌បៃតងគឺ 80 បំណែក",
+        "TOTAL_AMT": "1,500,325",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12141",
+        "INV_REMARK": "តម្លៃស៊ីម៉ងត៍ពណ៌បៃតងគឺ 640 បាល់ + តម្លៃនៃការសាងសង់ស៊ីម៉ងត៍គឺ 160 បាល់",
+        "TOTAL_AMT": "15,396,480",
+        "ITEM_ID": "Samnanglim"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12143",
+        "INV_REMARK": "តម្លៃធ្យូងថ្ម",
+        "TOTAL_AMT": "622,868",
+        "ITEM_ID": "TOOLACT"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12144",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "12,509,994",
+        "ITEM_ID": "88003196"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12145",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "708,048",
+        "ITEM_ID": "CHAMROEUNKHEHA"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12146",
+        "INV_REMARK": "តម្លៃពណ៌",
+        "TOTAL_AMT": "10,378,462",
+        "ITEM_ID": "88003200"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12147",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "2,242,835",
+        "ITEM_ID": "KYTHYORMORN"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12148",
+        "INV_REMARK": "តម្លៃក្បឿងជាន់",
+        "TOTAL_AMT": "95,396,499",
+        "ITEM_ID": "88003199"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12149",
+        "INV_REMARK": "ការចំណាយលើសម្ភារៈអនាម័យ",
+        "TOTAL_AMT": "12,967,485",
+        "ITEM_ID": "GRANDHOME"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12150",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "4,942,080",
+        "ITEM_ID": "SOMCHAIPANICHSTEEL"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12152",
+        "INV_REMARK": "តម្លៃយុថ្កាគីមី",
+        "TOTAL_AMT": "2,860,110",
+        "ITEM_ID": "88003197"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12153",
+        "INV_REMARK": "តម្លៃនៃទ្រនាប់បេតុង",
+        "TOTAL_AMT": "3,686,364",
+        "ITEM_ID": "88003203"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12155",
+        "INV_REMARK": "ថ្លៃឈ្នួល​ដឹកជញ្ជូន",
+        "TOTAL_AMT": "712,800",
+        "ITEM_ID": "BunyinJinajin"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12157",
+        "INV_REMARK": "តម្លៃប្រេងម៉ាស៊ូត",
+        "TOTAL_AMT": "118,800",
+        "ITEM_ID": "88003211"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12158",
+        "INV_REMARK": "តម្លៃទំនាក់ទំនងវិទ្យុ",
+        "TOTAL_AMT": "480,498",
+        "ITEM_ID": "88003204"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12159",
+        "INV_REMARK": "តម្លៃសម្ភារៈការិយាល័យ",
+        "TOTAL_AMT": "1,661,412",
+        "ITEM_ID": "OfficeMate"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12161",
+        "INV_REMARK": "ការដាក់ប្រាក់សម្រាប់គម្រោងអាលុយមីញ៉ូមទាំងមូល (ប្រាក់កក់ 30%)",
+        "TOTAL_AMT": "655,918,560",
+        "ITEM_ID": "PFO"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12162",
+        "INV_REMARK": "ការដាក់ប្រាក់ 20% សម្រាប់ទ្វារដែកការពារភ្លើង",
+        "TOTAL_AMT": "1,339,803",
+        "ITEM_ID": "Pantawitcompanylimited"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12163",
+        "INV_REMARK": "ការដាក់ប្រាក់ 20% សម្រាប់ទ្វារដែកទូទៅ (គម្រោងទាំងមូល)",
+        "TOTAL_AMT": "11,265,020",
+        "ITEM_ID": "Pantawitcompanylimited"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12164",
+        "INV_REMARK": "ការដាក់ប្រាក់ 20% សម្រាប់ឧបករណ៍ទ្វារដែក (គម្រោងទាំងមូល)",
+        "TOTAL_AMT": "1,548,273",
+        "ITEM_ID": "Pantawitcompanylimited"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12166",
+        "INV_REMARK": "តម្លៃសម្ភារៈនៅនឹងកន្លែង",
+        "TOTAL_AMT": "5,713,805",
+        "ITEM_ID": "PHNOMMAI"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12167",
+        "INV_REMARK": "ការជួល backhoe PC120 រយៈពេល 2 ថ្ងៃ",
+        "TOTAL_AMT": "1,663,200",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12168",
+        "INV_REMARK": "២ ដំណើរខ្សាច់ + ដំណើរថ្មើរជើង ១ ដង",
+        "TOTAL_AMT": "6,269,908",
+        "ITEM_ID": "CHHOEURNCHHEANG"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12169",
+        "INV_REMARK": "តម្លៃចាក់បេតុង 11-19/12/66",
+        "TOTAL_AMT": "7,273,292",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12170",
+        "INV_REMARK": "ដែកថែបមានតម្លៃ 600 ខ្សែ",
+        "TOTAL_AMT": "6,817,932",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12171",
+        "INV_REMARK": "តម្លៃនៃស៊ីម៉ងត៍ពណ៌បៃតងគឺ 240 បំណែក",
+        "TOTAL_AMT": "4,554,792",
+        "ITEM_ID": "0977777928"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12172",
+        "INV_REMARK": "ថ្លៃ​ឥដ្ឋ​ទម្ងន់​ស្រាល ១ ដំណើរ​ជាន់​ទី ១០",
+        "TOTAL_AMT": "10,431,590",
+        "ITEM_ID": "PKlightblock"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12176",
+        "INV_REMARK": "តម្លៃពលកម្ម DC",
+        "TOTAL_AMT": "43,613,737",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12179",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ធ្វើកំរាលឥដ្ឋ កម្រាលឥដ្ឋនៅជាន់ទី១ + រុះរើជញ្ជាំងនៅជាន់ទី១",
+        "TOTAL_AMT": "5,302,163",
+        "ITEM_ID": "CHANGPRAEWA"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12180",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ថ្នាំកូតរអិល ជញ្ជាំងថ្នាំលាប ជាន់ 1M, 4, 8, ជណ្តើរ ST3",
+        "TOTAL_AMT": "7,417,634",
+        "ITEM_ID": "Changrat"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12182",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ដំឡើងស៊ុមជណ្តើរ ST3 + បូកកំបោលាបជញ្ជាំង",
+        "TOTAL_AMT": "3,652,744",
+        "ITEM_ID": "ChangLeeHao"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12183",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - បូកកំបោលាបបន្ទះ cornice + រុះរើជញ្ជាំងនៅជាន់ទី 2",
+        "TOTAL_AMT": "14,252,792",
+        "ITEM_ID": "CHHANGBUNLEO"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12184",
+        "INV_REMARK": "តម្លៃពលកម្មរចនាសម្ព័ន្ធ - បន្ទប់ទូទៅរក្សារចនាសម្ព័ន្ធជញ្ជាំង",
+        "TOTAL_AMT": "570,834",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12185",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការផ្សារនិងការផ្គុំដំណាក់កាល + ជញ្ជាំងដំបូល",
+        "TOTAL_AMT": "6,689,747",
+        "ITEM_ID": "Changmai"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12188",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ការដំឡើងបន្ទះជញ្ជាំងការបោះបន្ទះ precast",
+        "TOTAL_AMT": "31,635,371",
+        "ITEM_ID": "CHANGTAWAN"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12189",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ដំឡើងគ្រឿងអនាម័យ SENSOR ជាន់ B2-2,3M",
+        "TOTAL_AMT": "3,370,950",
+        "ITEM_ID": "CHANGWANDEE"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12191",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ប្រោះនិងតុបតែងសន្លាក់ cornice លាបជញ្ជាំងខាងក្រៅនៃជាន់ទី 1-9",
+        "TOTAL_AMT": "6,898,241",
+        "ITEM_ID": "CHANGWANDEE"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12198",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ជញ្ជាំងស្រាល P9, 1M, 2,3M, 4,7,9\n ជាន់, ពិដានជាន់ 1M",
+        "TOTAL_AMT": "104,107,172",
+        "ITEM_ID": "other"
+    },
+    {
+        "INV_DATE": "2024-12-02",
+        "INV_NO": "PL12199",
+        "INV_REMARK": "តម្លៃពលកម្មស្ថាបត្យកម្ម - ជញ្ជាំងពន្លឺ P9 ជាន់ទី 6 ជាន់ទី 8",
+        "TOTAL_AMT": "40,779,288",
+        "ITEM_ID": "CHHANGBUNLEO"
+    }
+]
