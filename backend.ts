@@ -1,50 +1,28 @@
-interface Invoice {
-  ITEM_ID?: string;
-  INV_NO: string;
-  INV_DATE: string;
-  TOTAL_AMT?: string;
-  AMOUNT_KHR?: string;
-  [key: string]: string | undefined;
-}
-
-interface CompanyInfo {
-  id: string;
-  type: number;
-}
-
-interface ApiResponse {
-  DATA: {
-    ID: string;
-  };
-}
-
-interface InvoiceResult {
-  invoice_no: string;
-  message: string;
-  parsedJsonData: any;
-}
-
-export interface ProcessResult {
-  success: InvoiceResult[];
-  failed: InvoiceResult[];
-  message: string;
-  statusMessages?: string[];
-  requestBody?: {
-    textJsContent: string;
-    jsonData: string;
-  };
-}
-
 import axios from 'axios';
+import { 
+  Invoice,
+  InvoiceResult,
+  ProcessResult,
+  InvoiceProcessingConfig,
+  ApiResponse
+} from './src/types';
+import {
+  extractInvoiceData,
+  fetchCompanyInfo,
+  validateInvoiceAmounts,
+  processInvoiceAmounts
+} from './src/utils/invoiceUtils';
 
-// Configure axios defaults
-const axiosInstance = axios.create({
+const config: InvoiceProcessingConfig = {
   baseURL: 'https://efiling.tax.gov.kh',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json, text/plain, */*'
-  }
-});
+  },
+  timeout: 10000
+};
+
+const axiosInstance = axios.create(config);
 
 export async function processData(textJsContent: string, jsonData: string) {
   try {
@@ -199,17 +177,21 @@ export async function processData(textJsContent: string, jsonData: string) {
         const response = await axiosInstance.post(firstUrl, requestBody, { headers });
         const data =  response.data;
         
-        console.log(`Invoice ${invoice.INV_NO} processed successfully`, data);
-        
-        successfulInvoices.push({
-          invoice_no: invoice.INV_NO,
-          message: data,
-          parsedJsonData: requestBody
-        });
-        if(data != 'OK'){
+        if(data.RSLT_MSG == 'OK'){
+          console.log(`Invoice ${invoice.INV_NO} processed successfully`, data);
+          successfulInvoices.push({
+            invoice_no: invoice.INV_NO,
+            message: data.RSLT_MSG,
+            parsedJsonData: requestBody
+          });
+        }else{
+          console.log(`Invoice ${invoice.INV_NO} processed failed`, data);
           failedInvoices.push({
             invoice_no: invoice.INV_NO,
-            message: data,
+            message: JSON.stringify({
+              code: data.RSLT_CD,
+              message: data.RSLT_MSG
+            }),
             parsedJsonData: requestBody
           });
         }
@@ -280,7 +262,7 @@ export async function processData(textJsContent: string, jsonData: string) {
 
       if (failedInvoices.length > 0) {
         console.log("\n⚠️  Failed Invoice Numbers:");
-        failedInvoices.forEach((invNo, idx) => console.log(`${idx + 1}. ${invNo}`));
+        failedInvoices.forEach((invoice, idx) => console.log(`${idx + 1}. ${invoice.invoice_no}`));
       }
 
       console.log("\n=== Processing Complete ===");
@@ -320,3 +302,5 @@ export async function processData(textJsContent: string, jsonData: string) {
     };
   }
 }
+
+export type { ProcessResult, InvoiceResult };

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { ProcessResult } from '../backend';
+import type { ProcessResult, InvoiceResult } from '../backend';
 
 export default function Home() {
   const [textJsContent, setTextJsContent] = useState('');
@@ -210,7 +210,7 @@ export default function Home() {
                       <td className="px-4 py-2">{invoice.parsedJsonData?.INV_REMARK || 'N/A'}</td>
                       <td className="px-4 py-2">{invoice.parsedJsonData?.TOTAL_AMT || 'N/A'}</td>
                       <td className="px-4 py-2">{invoice.parsedJsonData?.VAT_TYPE || 3}</td>
-                      <td className="px-4 py-2">{invoice.message === 'OK' ? 'Success' : 'Warning'}</td>
+                      <td className="px-4 py-2">Success</td>
                       <td className="px-4 py-2">{invoice.message}</td>
                     </tr>
                   ))}
@@ -222,7 +222,7 @@ export default function Home() {
                       <td className="px-4 py-2">{invoice.parsedJsonData?.TOTAL_AMT || 'N/A'}</td>
                       <td className="px-4 py-2">{invoice.parsedJsonData?.VAT_TYPE || 3}</td>
                       <td className="px-4 py-2">Failed</td>
-                      <td className="px-4 py-2">{invoice.message}</td>
+                      <td className="px-4 py-2">{JSON.parse(invoice.message).message}</td>
                     </tr>
                   ))}
                 </tbody>
