@@ -14,10 +14,13 @@ import {
 } from './src/utils/invoiceUtils';
 
 const config: InvoiceProcessingConfig = {
-  baseURL: 'https://efiling.tax.gov.kh',
+  baseURL: process.env.API_BASE_URL || 'https://efiling.tax.gov.kh',
   headers: {
     'Content-Type': 'application/json',
-    'Accept': 'application/json, text/plain, */*'
+    'Accept': 'application/json, text/plain, */*',
+    'Access-Control-Allow-Origin': process.env.NODE_ENV === 'production' ? process.env.ALLOWED_ORIGINS || '*' : '*',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization'
   },
   timeout: 10000
 };
