@@ -13,6 +13,18 @@ const nextConfig: NextConfig = {
   },
   serverRuntimeConfig: {
     apiBaseUrl: process.env.API_BASE_URL
+  },
+  api: {
+    bodyParser: {
+      sizeLimit: '1mb'
+    },
+    responseLimit: '10mb',
+    externalResolver: true
+  },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb'
+    }
   }
 };
 
