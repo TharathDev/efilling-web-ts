@@ -36,7 +36,8 @@ export default function Home() {
 
     setProcessing(true);
     try {
-      const response = await fetch('/api/process', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/process';
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,6 +46,7 @@ export default function Home() {
           textJsContent, 
           jsonData 
         }),
+        credentials: 'include'
       });
 
       if (!response.ok) {

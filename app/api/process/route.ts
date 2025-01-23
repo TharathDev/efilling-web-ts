@@ -10,7 +10,9 @@ export async function POST(request: Request) {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': process.env.ALLOWED_ORIGINS || '*',
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      'Access-Control-Allow-Credentials': 'true',
+      'Vary': 'Origin'
     });
 
     // Handle OPTIONS request for CORS preflight
