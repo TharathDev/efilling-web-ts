@@ -22,10 +22,33 @@ const config: InvoiceProcessingConfig = {
     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization'
   },
-  timeout: 10000
+  timeout: 30000, // Increased timeout to 30 seconds
+  maxBodyLength: Infinity,
+  maxContentLength: Infinity
 };
 
+// Log configuration in production
+if (process.env.NODE_ENV === 'production') {
+  console.log('Production API Configuration:', {
+    baseURL: config.baseURL,
+    timeout: config.timeout,
+    allowedOrigins: process.env.ALLOWED_ORIGINS
+  });
+}
+
 const axiosInstance = axios.create(config);
+
+// Add axios retry logic
+axiosInstance.interceptors.response.use(undefined, (error) => {
+  if (error.code === 'ECONNABORTED') {
+    console.error('Request timed out:', error.config.url);
+    return Promise.reject({
+      message: 'Request timed out. Please try again later.',
+      isTimeout: true
+    });
+  }
+  return Promise.reject(error);
+});
 
 export async function processData(textJsContent: string, jsonData: string) {
   try {

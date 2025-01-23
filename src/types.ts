@@ -39,4 +39,6 @@ export interface InvoiceProcessingConfig {
   baseURL: string;
   headers: Record<string, string>;
   timeout: number;
+  maxBodyLength?: number;
+  maxContentLength?: number;
 }
